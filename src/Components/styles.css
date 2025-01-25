@@ -1,0 +1,289 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .display-documents{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .file-upload{
+    width: 1200px;
+    border: 1px solid rgb(176 174 174);
+    padding: 2px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+  .file-upload-header{
+    border-bottom: 1px solid rgb(241,241,241);
+    /* padding-bottom: 5px; */
+         background:#f9fafb;
+        padding: 1.25rem;
+        /* border: 1px solid #e5e7eb; */
+        color: #374151;
+        border-bottom: 0 none;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        gap: .5rem;
+        font-weight: bold;
+  }
+  .file-upload-btn{
+    margin-right: 10px;
+  }
+  .fileDetails{
+    height: 50px;
+    margin: 20px 10px;
+    padding: 10px 10px;
+  }
+  .cancelbtn{
+    background-color: rgb(124, 104, 104);
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+
+  .addapplicationbtn{
+     margin-top: 20px;
+  }
+
+  .h-3rem {
+    height: 3rem!important;
+}
+
+.button{
+    padding: 12px 20px;
+    background-color: #3b82f6 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height:3rem;
+    font-weight: bold;
+  }
+  .addbutton{
+    padding: 12px 40px;
+    background-color: #3b82f6 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height:3rem;
+    font-weight: bold;
+  }
+
+  .iconbg{
+    background: #3b82f6;
+  }
+  .savebtn {
+    color: #fff;
+    background: #3b82f6;
+    border: 1px solid #3b82f6;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 6px;
+    margin-right: 10px; /* Add spacing between buttons */
+    font-weight: bolder;
+  }
+  
+  .savebtn:hover {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+  }
+  
+  .cancelbttn {
+    color: #fff;
+    background: #64748b;
+    border: 1px solid #64748b;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 6px;
+    font-weight: bolder;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 15px; /* Add spacing from the input above */
+  }
+
+  .inputstyle{
+    /* font-family:var(--font-family); */
+    font-feature-settings: var(--font-feature-settings, normal);
+    font-size: 1rem;
+    color: #4b5563;
+    background: #fff;
+    padding: .75rem;
+    border: 1px solid #d1d5db;
+    transition: background-color .2s,color .2s,border-color .2s,box-shadow .2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 6px;
+    outline-color: transparent;
+    width: 95%;
+    margin: 20px 0;
+  }
+  .inputstyle:focus {
+    /* Keep the same style as the base class */
+    font-size: 1rem;
+    color: #4b5563;
+    background: #fff;
+    padding: 0.75rem;
+    border: 1px solid #3b82f6; /* Optional: Highlight border color on focus */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* Optional: Add a subtle shadow */
+    outline: none; /* Remove default outline */
+  }
+  .title {
+    color: #4b5563;
+    margin-bottom:20px;
+    font-weight: 700;
+    
+  }
+
+  .greycolor{
+    color: #4b5563;
+  }
+
+  .container {
+    font-family: 'Roboto', sans-serif;
+    padding: 1.25rem;
+    max-width: 100%;
+    position: relative; /* Ensure other elements in this container don't overflow out of bounds */
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .navItemContainer {
+    margin: 5px 0;
+  }
+  
+  .navItem {
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 700; /* Corrected from fontsize to font-weight */
+  }
+  
+  .deleteAppButton {
+    float: right;
+    background: #3b82f6;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* This keeps the background dimmed when modal is active */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures the modal stays on top */
+  }
+  
+  .modalContent {
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    width: 447px;
+    height: 295px;
+    box-sizing: border-box; /* Prevents padding from affecting width */
+    z-index: 1100; /* Ensures modal content stays above modal background */
+  }
+  
+  .input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .documents {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .documentBox {
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .selectButton {
+    background-color: #3b82f6;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .fileOptions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 200px;
+    align-items: flex-start; /* Ensure alignment of buttons and inputs */
+  }
+  
+  .link {
+    color: #3b8fc5;
+    text-decoration: none;
+  }
+  
+  .navButtons {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navButton {
+    padding: 10px 20px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fileInfo {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  
