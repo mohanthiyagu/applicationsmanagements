@@ -45,9 +45,6 @@ const Applications = () => {
     }
   };
 
-  // const setActiveDoc = (index) => {
-  //   setActiveDocumentIndex(index === activeDocumentIndex ? null : index);
-  // };
 
   const removeApplication = (appName) => {
     if (
@@ -61,19 +58,6 @@ const Applications = () => {
       }
     }
   };
-
-  // const removeDocument = (appName, docName) => {
-  //   setApplicationsList(
-  //     applicationsList.map((app) =>
-  //       app.name === appName
-  //         ? {
-  //             ...app,
-  //             documents: app.documents.filter((doc) => doc.name !== docName),
-  //           }
-  //         : app
-  //     )
-  //   );
-  // };
 
   const goToNextDoc = () => {
     if (!applicationsList.length) return;
